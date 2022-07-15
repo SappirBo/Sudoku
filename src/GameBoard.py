@@ -1,6 +1,7 @@
+import random
 
 BOARD_SIZE = 9
-
+table = [1,2,3,4,5,6,7,8,9]
 
 class GameBoard:
     def __init__(self):
@@ -15,6 +16,15 @@ class GameBoard:
     def at(self,row: int, column: int) -> int:
         return self.board[row][column]
 
+    def fill_board(self):
+        tmp_table = table
+        for i in range(0,3):
+            for j in range(0,3):
+                num = random.randint(0,9)
+                while num not in tmp_table:
+                    num = random.randint(0, 9)
+                self.board[i][j] = num
+                tmp_table.remove(num)
 
 
     def print_board(self):
