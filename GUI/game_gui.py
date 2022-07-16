@@ -27,7 +27,8 @@ class myLayout(Widget):
                 self.ids[key].text = ""
 
     def start_game_easy(self):
-        curr_game.reAnitioliz_game()
+        print("___ Start New Game ___")
+        curr_game.new_game()
         self.draw_board()
 
     def draw_board(self):
@@ -58,9 +59,8 @@ class myLayout(Widget):
         self.draw_board()
 
     def reStart(self):
-        print("__ReStart__")
-        curr_game.board_partial_copy.print_board()
-        curr_game.reAnitioliz_game()
+        print("___ ReStart ___")
+        curr_game.board_partial.board = curr_game.board_partial_copy
         curr_game.board_partial.print_board()
         self.draw_board()
 
@@ -75,10 +75,10 @@ class myLayout(Widget):
 
 
 
-class clacApp(App):
+class SudokuApp(App):
     def build(self):
         return myLayout()
 
 
 if __name__ == '__main__':
-    clacApp().run()
+    SudokuApp().run()

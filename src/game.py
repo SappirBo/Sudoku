@@ -7,7 +7,7 @@ class game:
         self.difficulty = int(game_difficulty)
         self.board_full = GameBoard()
         self.board_partial = GameBoard()
-        self.board_partial_copy = GameBoard()
+        self.board_partial_copy = []
         self.initiolize_game()
 
     def initiolize_game(self):
@@ -17,11 +17,19 @@ class game:
             i = random.randint(0, 8)
             j = random.randint(0, 8)
             self.board_partial.board[i][j] = self.board_full.board[i][j]
-        self.board_partial_copy.board = self.board_partial.board.copy()
+        self.board_partial_copy = self.board_partial.board.copy()
 
-    def reAnitioliz_game(self):
-        self.board_partial.board.clear()
-        self.board_partial.board = self.board_partial_copy.board.copy()
+    def new_game(self):
+        self.board_full.create_board()
+        self.board_partial.create_board()
+        self.board_partial_copy.clear()
+        self.board_full.fill_board()
+        filled_slots = int(30 / self.difficulty)
+        for times in range(filled_slots):
+            i = random.randint(0, 8)
+            j = random.randint(0, 8)
+            self.board_partial.board[i][j] = self.board_full.board[i][j]
+        self.board_partial_copy = self.board_partial.board.copy()
 
     def move(self, row: int, column: int, number: int):
         if number >= 10 or number <= 0:
