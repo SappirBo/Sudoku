@@ -15,10 +15,11 @@ class GameBoard:
                 self.board[i][j] = 0
 
     def check_board(self) -> bool:
-        for i in range(0, 9):
-            for j in range(0, 9):
-                if self.board[i][j] != 0:
+        for i in range(9):
+            for j in range(9):
+                if self.board[i][j] == 0:
                     return False
+        return True
 
     def at(self, row: int, column: int) -> int:
         return self.board[row][column]
@@ -49,17 +50,21 @@ class GameBoard:
 
 
     def fill_board(self)->bool:
-        for i in range(9):
-            for j in range(9):
-                if self.board[i][j] == 0:
-                    for number in table:
-                        if self.possible(i, j, number):
-                            self.board[i][j] = number
-                            self.fill_board()
-                            self.board[i][j] = 0
-                    return
-        self.print_board()
-        input("Done")
+        if self.check_board() is True:
+            return True
+        else:
+            for i in range(9):
+                for j in range(9):
+                    if self.board[i][j] == 0:
+                        for number in table:
+                            if self.possible(i, j, number):
+                                self.board[i][j] = number
+                                if self.fill_board() is True:
+                                    return True
+                                else:
+                                    self.board[i][j] = 0
+                        return
+            return True
 
 
     def print_board(self):
