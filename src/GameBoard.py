@@ -48,7 +48,6 @@ class GameBoard:
                 if self.possible(i, j, number):
                     self.board[i][j] = number
 
-
     def fill_board(self)->bool:
         if self.check_board() is True:
             return True
@@ -65,7 +64,6 @@ class GameBoard:
                                     self.board[i][j] = 0
                         return
             return True
-
 
     def print_board(self):
         for line in self.board:
