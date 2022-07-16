@@ -7,6 +7,8 @@ class game:
         self.board_full = GameBoard()
         self.board_partial = GameBoard()
 
+        self.initiolize_game()
+
     def initiolize_game(self):
         self.board_full.fill_board()
         filled_slots = int(30/self.difficulty)

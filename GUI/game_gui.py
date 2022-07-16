@@ -7,32 +7,37 @@ from kivy.core.window import Window
 from src.game import *
 from src.GameBoard import *
 
-
 # Setting up size of the up
 Window.size = (800, 400)
 # Setting Up the kv file
 Builder.load_file('game_gui.kv')
 
+curr_game = game(1)
+
 
 class myLayout(Widget):
-    this_game = game(1)
 
-    def start_game(self):
+    def clear_board(self):
+        for row in range(9):
+            for col in range(9):
+                    row_str = str(row)
+                    col_str = str(col)
+                    key = "n" + row_str + col_str
+                    self.ids[key].text = ""
 
-        this_game = game(3)
-
-
-    def clear(self):
-        self.ids.calc_input.text = ''
+    def start_game_easy(self):
+        curr_game = game(1)
+        self.clear_board()
+        for row in range(9):
+            for col in range(9):
+                if curr_game.board_partial.board[row][col] != 0:
+                    row_str = str(row)
+                    col_str = str(col)
+                    key = "n" + row_str + col_str
+                    self.ids[key].text = str(curr_game.board_partial.board[row][col])
 
     # button pressing function
-    def button_press(self, button):
-        prev = self.ids.calc_input.text
-        if prev == '0':
-            self.ids.calc_input.text = ''
-            self.ids.calc_input.text = f'{button}'
-        else:
-            self.ids.calc_input.text += f'{button}'
+    # def move(self, button):
 
 
 

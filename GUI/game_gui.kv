@@ -1,3 +1,26 @@
+#: import Factory kivy.factory.Factory
+
+<difficulty@Popup>
+    auto_dismiss: False
+    size_hint: 0.6 , 0.4
+    pos_hint: {"x":0.2,"top": 0.9}
+    title: "Chose Difficulty:"
+    BoxLayout:
+        Button:
+            text:"Easy"
+            font_size: 16
+            on_release: root.dismiss()
+        Button:
+            text:"Medium"
+            font_size: 16
+            on_release: root.dismiss()
+        Button:
+            text:"Hard"
+            font_size: 16
+            on_release: root.dismiss()
+
+
+
 <myLayout>
     BoxLayout:
         orientation: "vertical"
@@ -12,453 +35,454 @@
                 rows:9
 
                 TextInput:
-                    id: 0
+                    id: n00
                     size_hint: (.2,.2)
-                    halign: "right"
-                    font_size: 24
-                    text: ""
-                    background_color: (157/255,157/255,157/255,1)
-                TextInput:
-                    id: 1
-                    size_hint: (.2,.2)
+                    halign: "left"
+                    valign: 'middle'
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 2
+                    id: n01
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 3
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 4
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 5
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 6
+                    id: n02
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 7
+                    id: n03
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n04
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n05
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n06
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 8
+                    id: n07
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 9
+                    id: n08
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 10
+                    id: n10
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 11
+                    id: n11
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 12
+                    id: n12
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                    background_color: (157/255,157/255,157/255,1)
+                TextInput:
+                    id: n13
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
 
                 TextInput:
-                    id: 13
+                    id: n14
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                 TextInput:
-                    id: 14
+                    id: n15
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                 TextInput:
-                    id: 15
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                    background_color: (157/255,157/255,157/255,1)
-                TextInput:
-                    id: 16
+                    id: n16
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 17
+                    id: n17
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 18
+                    id: n18
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 19
+                    id: n20
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 20
+                    id: n21
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 21
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 22
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 23
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 24
+                    id: n22
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 25
+                    id: n23
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n24
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n25
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n26
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 26
+                    id: n27
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 27
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 28
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 29
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 30
+                    id: n28
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 31
+                    id: n30
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n31
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n32
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n33
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 32
+                    id: n34
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 33
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 34
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 35
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 36
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 37
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 38
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 39
+                    id: n35
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 40
+                    id: n36
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n37
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n38
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n40
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n41
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n42
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n43
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 41
+                    id: n44
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 42
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 43
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 44
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 45
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 46
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 47
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 48
+                    id: n45
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 49
+                    id: n46
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n47
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n48
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n50
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n51
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n52
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n53
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 50
+                    id: n54
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 51
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 52
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 53
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 54
+                    id: n55
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 55
+                    id: n56
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n57
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n58
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n60
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 56
+                    id: n61
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 57
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 58
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 59
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 60
+                    id: n62
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 61
+                    id: n63
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n64
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n65
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n66
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 62
+                    id: n67
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 63
+                    id: n68
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 64
+                    id: n70
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 65
+                    id: n71
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 66
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 67
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 68
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 69
+                    id: n72
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 70
+                    id: n73
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n74
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n75
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n76
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 71
+                    id: n77
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 72
+                    id: n78
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 73
+                    id: n80
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 74
+                    id: n81
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 75
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 76
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 77
-                    size_hint: (.2,.2)
-                    font_size: 32
-                    text: ""
-                TextInput:
-                    id: 78
+                    id: n82
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 79
+                    id: n83
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n84
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n85
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                TextInput:
+                    id: n86
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
                     background_color: (157/255,157/255,157/255,1)
                 TextInput:
-                    id: 80
+                    id: n87
+                    size_hint: (.2,.2)
+                    font_size: 32
+                    text: ""
+                    background_color: (157/255,157/255,157/255,1)
+                TextInput:
+                    id: n88
                     size_hint: (.2,.2)
                     font_size: 32
                     text: ""
@@ -472,29 +496,30 @@
                     size_hint: (.2,.2)
                     font_size: 32
                     text: "New Game"
-                    background_color: (112/255,45/255,209/255,1)
+                    on_press: root.start_game_easy()
+                    background_color: (154/255,110/255,254/255,1)
 
                 Button:
                     size_hint: (.2,.2)
                     font_size: 32
                     text: "View Solution"
-                    background_color: (30/255,82/255,149/255,1)
+                    background_color: (154/255,110/255,254/255,1)
 
                 Button:
                     size_hint: (.2,.2)
                     font_size: 32
                     text: "Roll Back"
-                    background_color: (112/255,45/255,209/255,1)
+                    background_color: (154/255,110/255,254/255,1)
 
                 Button:
                     size_hint: (.2,.2)
                     font_size: 32
                     text: "Replay"
-                    background_color: (30/255,82/255,149/255,1)
+                    background_color: (154/255,110/255,254/255,1)
                 Button:
                     size_hint: (.2,.2)
                     font_size: 32
-                    text: "Button"
-                    background_color: (112/255,45/255,209/255,1)
+                    text: "Save / Load"
+                    background_color: (154/255,110/255,254/255,1)
 
 
