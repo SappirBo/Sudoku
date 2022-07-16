@@ -6,10 +6,12 @@ import os
 def run():
     print("Start Game")
     diff = input("Difficulty ?")
+    print(" ")
     current_game = game(diff)
     current_game.initiolize_game()
     while current_game.game_stats() == False:
         os.system('cls')
+        print(" ")
         current_game.print_game()
         next_move_x = int(input("next x?"))
         next_move_y = int(input("next y?"))

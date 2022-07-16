@@ -13,7 +13,7 @@ class game:
         for times in range(filled_slots):
             i = random.randint(0, 8)
             j = random.randint(0, 8)
-            self.board_partial[i][j] = self.board_full[i][j]
+            self.board_partial.board[i][j] = self.board_full.board[i][j]
 
     def move(self,row: int, column: int ,number: int ):
         if number >= 10 or number <= 0:
@@ -24,15 +24,13 @@ class game:
             raise Exception("Invalid Column")
         row -= 1
         column -= 1
-        if self.board_full[row][column] == number and self.board_partial[row][column] == 0:
-            self.board_partial[row][column] == number
-        if self.game_stats() == True:
-            print("Game Over")
+        if self.board_partial.board[row][column] == 0 and self.board_partial.possible(row,column,number):
+            self.board_partial.board[row][column] = number
 
     def game_stats(self):
         for i in range(9):
             for j in range(9):
-                if self.board_partial[i][j] == 0:
+                if self.board_partial.board[i][j] == 0:
                     return False
         return True
 
