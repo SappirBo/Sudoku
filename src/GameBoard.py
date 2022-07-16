@@ -48,7 +48,7 @@ class GameBoard:
                     self.board[i][j] = number
 
 
-    def fill_board(self):
+    def fill_board(self)->bool:
         for i in range(9):
             for j in range(9):
                 if self.board[i][j] == 0:
@@ -58,7 +58,9 @@ class GameBoard:
                             self.fill_board()
                             self.board[i][j] = 0
                     return
-        print("Done")
+        self.print_board()
+        input("Done")
+
 
     def print_board(self):
         for line in self.board:
