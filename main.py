@@ -25,6 +25,5 @@ def run():
             next_move_number = int(input("number?"))
             current_game.move(next_move_x,next_move_y,next_move_number)
 
-
 if __name__ == "__main__":
     run()
