@@ -52,6 +52,7 @@ class GameBoard:
         if self.check_board() is True:
             return True
         else:
+            shuffle(table)
             for i in range(9):
                 for j in range(9):
                     if self.board[i][j] == 0:
