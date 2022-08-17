@@ -9,3 +9,4 @@ resources: <br/>
 - [official Kivy documentation.](https://kivy.org/doc/stable/)
 - [Sudoku Algorithm Explained.](https://www.youtube.com/watch?v=G_UYXzGuqvM&t=533s&ab_channel=Computerphile)
 - [General Info about the game.](https://en.wikipedia.org/wiki/Sudoku)
+
